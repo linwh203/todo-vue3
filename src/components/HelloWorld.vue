@@ -12,9 +12,9 @@
 </template>
 
 <script>
-import Composition from "./Composition.vue";
-import ModalButton from "./ModalButton.vue";
-import Emits from "./Emits.vue";
+import Composition from "./helloWorld/Composition.vue";
+import ModalButton from "./helloWorld/ModalButton.vue";
+import Emits from "./helloWorld/Emits.vue";
 export default {
   name: "HelloWorld",
   components: {

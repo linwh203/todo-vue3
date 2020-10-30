@@ -8,10 +8,10 @@ export default {
   setup() {
     const state = reactive({
       data: [
-        { name: "大专", count: 200, color: "brown" },
-        { name: "本科", count: 300, color: "yellow" },
-        { name: "硕士", count: 100, color: "pink" },
-        { name: "博士", count: 50, color: "skyblue" },
+        { name: "一类", count: 200, color: "brown" },
+        { name: "二类", count: 300, color: "yellow" },
+        { name: "三类", count: 100, color: "pink" },
+        { name: "四类", count: 50, color: "skyblue" },
       ],
     });
     function handleClick() {

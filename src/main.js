@@ -1,11 +1,19 @@
 import { createApp, createRenderer } from "vue"
 import App from "./App.vue"
 import "./index.css"
-import CanvasApp from "./CanvasApp.vue"
+// import CanvasApp from "./CanvasApp.vue"
 import EditTodoInput from "./components/todos/EditTodoInput.vue"
+import router from "./router"
+import store from "./store"
 
-createApp(App).component("EditTodoInput", EditTodoInput).mount("#app")
+createApp(App)
+  .use(router)
+  .use(store)
+  .component("EditTodoInput", EditTodoInput)
+  .mount("#app")
 
+/**
+ * custome render 
 // 绘制方法，el就是子元素
 const draw = (el, noClear) => {
   if (!noClear) {
@@ -123,4 +131,5 @@ function createCanvasApp(App) {
   return app
 }
 
-// createCanvasApp(CanvasApp).mount("#canvasapp")
+createCanvasApp(CanvasApp).mount("#canvasapp")
+ */
